@@ -38,6 +38,7 @@ const teamMembers = [
 ];
 
 // seleziono elemento di output
+const cardMember = document.querySelector('.team-member');
 
 // creo una variabile per le card
 let items = "";
@@ -47,24 +48,28 @@ for (let i = 0; i < teamMembers.length; i++) {
   let membroIesimo = teamMembers[i];
 
   // estraggo i valori delle proprietà dell'oggetto
-  const {name, role, email, img} = membroIesimo;
+  const { name, role, email, img } = membroIesimo;
 
   // console.log(name, role, email, img);
 
   // riempio variabile i dati dell'oggetto
   items += `
-  <li>
-     nome: ${name} <br>
-     ruolo: ${role} <br>
-     email: ${email} <br>
-     img: ${img}
-  <li/>`
-
-  console.log(items);
-  
-
-
+  <div class="row g-0">
+    <div class="col-md-3">
+      <img src="img/${img}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h5 class="card-title">${name}</h5>
+        <p class="card-text">${role}</p>
+        <p class="card-text"><small class="text-muted">${email}</small></p>
+      </div>
+    </div>
+  </div>`
 }
+
+// output
+cardMember.innerHTML = items;
 
 
 
