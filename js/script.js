@@ -37,10 +37,37 @@ const teamMembers = [
   }
 ];
 
+// seleziono elemento di output
+
+// creo una variabile per le card
+let items = "";
+
 // output dell'array teamMembers
 for (let i = 0; i < teamMembers.length; i++) {
   let membroIesimo = teamMembers[i];
-  // stampo
-  console.log(membroIesimo);
+
+  // estraggo i valori delle proprietà dell'oggetto
+  const {name, role, email, img} = membroIesimo;
+
+  // console.log(name, role, email, img);
+
+  // riempio variabile i dati dell'oggetto
+  items += `
+  <li>
+     nome: ${name} <br>
+     ruolo: ${role} <br>
+     email: ${email} <br>
+     img: ${img}
+  <li/>`
+
+  console.log(items);
   
+
+
 }
+
+
+
+
+
+
