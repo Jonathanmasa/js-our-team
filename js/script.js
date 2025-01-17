@@ -36,3 +36,11 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// output dell'array teamMembers
+for (let i = 0; i < teamMembers.length; i++) {
+  let membroIesimo = teamMembers[i];
+  // stampo
+  console.log(membroIesimo);
+  
+}
