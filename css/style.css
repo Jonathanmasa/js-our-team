@@ -1,0 +1,45 @@
+/* gernerali */
+body {
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+}
+
+header h1 {
+    color: rgb(226, 83, 131);
+    font-weight: 900;
+}
+
+/* card */
+.contenitore-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.contenitore-2 {
+    display: flex;
+    justify-content: space-around;
+    
+ 
+}
+
+.immagine {
+    width: 30%;
+
+}
+
+.descrizione {
+    width: 70%;
+    padding: 5px;
+    background-color: black;
+    color: white;
+
+}

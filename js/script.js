@@ -54,18 +54,18 @@ for (let i = 0; i < teamMembers.length; i++) {
 
   // riempio variabile i dati dell'oggetto
   items += `
-  <div class="row g-0">
-    <div class="col-md-3">
-      <img src="img/${img}" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-9">
-      <div class="card-body">
-        <h5 class="card-title">${name}</h5>
-        <p class="card-text">${role}</p>
-        <p class="card-text"><small class="text-muted">${email}</small></p>
-      </div>
-    </div>
-  </div>`
+            <div class="contenitore-2">
+               <div class="immagine">
+                  <img src="${img}" class="img-fluid rounded-start" alt="...">
+                </div>
+                
+                <div class="descrizione">
+                    <h5 class="card-title">${name}</h5>
+                    <p class="card-text">${role}</p>
+                    <p class="card-text"><small class="text-muted">${email}</small></p>
+                </div>
+                
+            </div>`
 }
 
 // output
